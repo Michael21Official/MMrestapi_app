@@ -20,22 +20,22 @@ public class Main {
         System.out.println("Tworzymy użytkowników kamilbrzezinski i kamilb");
         System.out.println("Wywołujemy metodę addUser() dla obu tych użytkowników");
         System.out.println("Wywołujemy metodę getUsers()");
-        User user1 = new User("kamilbrzezinski", 31, "Kamil Brzeziński");
-        User user2 = new User("kamilb", 31, "Kamil B.");
+        User user1 = new User("michalmatsalak", 31, "Michał Matsalak");
+        User user2 = new User("michalm", 31, "Michal M.");
         databaseClient.addUser(user1);
         databaseClient.addUser(user2);
         System.out.println(databaseClient.getUsers());
 
         System.out.println();
         System.out.println("-----------------");
-        System.out.println("Wywołujemy metodę getUser(kamilbrzezinski)");
-        System.out.println(databaseClient.getUser("kamilbrzezinski"));
+        System.out.println("Wywołujemy metodę getUser(michalmatsalak)");
+        System.out.println(databaseClient.getUser("michalmatsalak"));
 
         System.out.println();
         System.out.println("-----------------");
-        System.out.println("Wywołujemy metody deleteUser(kamilbrzezinski)");
+        System.out.println("Wywołujemy metody deleteUser(michalmatsalak)");
         System.out.println("Wywołujemy metodę getUsers()");
-        databaseClient.deleteUser("kamilbrzezinski");
+        databaseClient.deleteUser("michalmatsalak");
         System.out.println(databaseClient.getUsers());
 
 
